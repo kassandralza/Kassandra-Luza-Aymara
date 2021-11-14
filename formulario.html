@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Red social</title>
+		<meta charset="utf-8"> 
+		<link  href="CSS/ESTILOS.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<header> 
+			<div id="logo">
+				<img src="img/logo.png" alt="logo">
+			</div>
+		</header>
+		<section id="formulario">
+			<form type="nuevo usuario" method="post"action="php/conexioncrearusuario.php">
+				nickame:<br>
+				<input type="text" name="usuario"pattern="[a-zA-Z0-9]+" placeholder="ingrese su nombre de usuario" required> <br>
+				contraseña:<br>
+				<input type="password" name="contraeña" maxlength="20" autocomplete="new-password" placeholder="ingrese contraseña" required> <br>
+				nombre:<br>
+				<input type="text" name="nombre" placeholder="ingrese su nombre" required> <br>
+				apellido:<br>
+				<input type="text" name="apellido" placeholder="ingrese sus apellidos" required> <br>
+				email:<br>
+				<input type="email" name="correo" placeholder="ingrese su correo" required> <br>
+				edad:<br>
+				<input type="number" name="edad"  min="18"placeholder="ingrese su edad" required> <br>
+				descripcion:<br>
+				<textarea name="descripcion" placeholder="ingrese su descripcion" required> </textarea> <br>
+				<hr>
+				
+				<input type="submit" name="enviar" class="boton" value="registrar" />
+				<input type="reset" class="boton" value="borrar" />
+				
+			</form>	
+		</section>
+		
+		
+		<section id="formulario2">
+				nickame:<br>
+				<input type="text" name="nickname"pattern="[a-zA-Z0-9]+" placeholder="ingrese su nombre de usuario" required> <br>
+				contraseña:<br>
+				<input type="password" name="contraeña"  autocomplete="off" placeholder="ingrese contraseña" required> <br>
+				<hr>
+				<input type="submit" name="enviar" class="boton" value="iniciar sesion" />
+		</section>
+		
+		<footer>
+			<p> copyright &copy; 2020,kassandra.luza@ucsp.edu.pe</p>
+		</footer>
+		
+	</body>
+</html>
